@@ -5,6 +5,9 @@
 :root{
     --body-bg-color:#ddccac;
     --font-color:#4F3B1D;
+    --div-bg-color:#FFF9EF;
+    --border-color:#C3A780;
+    --color-div-hover:#b5863e76;
 }
 body{
    
@@ -54,7 +57,7 @@ div#container > div{
    
     margin: auto;
     margin-top: 12px;
-    border: 1px solid #C3A780;
+    border: 1px solid var(--border-color);
     padding: 10px;
     border-radius: 25px;
     width: 68%;
@@ -64,8 +67,13 @@ div#container > div{
     transition: box-shadow 0.2s ease-in-out;
     height: 40px;
     text-align: center;
-    background-color:#FFF9EF;
+    background-color:var(--div-bg-color);
 }
+div#container > div:hover{
+   border: 2px solid var(--color-div-hover);
+}
+
+
 div#container div a{
     text-decoration: none;
     color: var(--font-color);
