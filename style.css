@@ -72,8 +72,6 @@ div#container > div{
 div#container > div:hover{
    border: 2px solid var(--color-div-hover);
 }
-
-
 div#container div a{
     text-decoration: none;
     color: var(--font-color);
