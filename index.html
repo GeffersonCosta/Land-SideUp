@@ -13,7 +13,6 @@
 </head>
 <body>
    <main>
-    <section>
         <div id="container">
         <h1 class="titulo">Joana Descalço - Side Up</h1>
             <div><span class="texto">Como Artista Profissional de Branding,<br>levo a tua essência até a tua Marca.</span></div>
@@ -26,8 +25,11 @@
             <div class="itens"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD6ZWNCQ0PXphHAFjp4rC9iaSkHiAaenIenBGUsl4YuUvtA/viewform" target="_blank">O teu Feedback</a></div>
             <div class="itens"><a href="https://livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclamações</a></div>
         </div>
-    </section>
+        <footer>&#169 <span id="anoAtual"></span> SideUp</footer>
    </main>
-   <footer>Todos os direitos reservados - SideUp</footer>
+   <script>
+    const data = new Date()
+    var ano = document.getElementById('anoAtual').innerHTML = data.getFullYear()
+   </script>
 </body>
 </html>
