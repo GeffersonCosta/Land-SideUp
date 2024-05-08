@@ -20,7 +20,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
-
 }
 h1{
     font-family: "Lato", sans-serif;
@@ -28,10 +27,41 @@ h1{
     font-style: italic;
     font-size:1.6em;
     margin-bottom: 20px;
+    animation: titulo 1.7s;
 }
+span.texto{
+    animation: animado-txt 1s;
+
+}
+@keyframes titulo{
+    from{
+       font-size: 0rem;
+    }
+    to{
+        font-size: 1.6rem;
+    }
+}
+@keyframes animado-txt{
+    from{
+        font-size: 0;
+    }
+    to{
+        font-size: 1rem;
+    }
+}
+@keyframes itens{
+    from{
+       width:0%;
+       font-size: 0rem;
+    }
+    to{
+       width: 68%;
+       font-size: 1rem;
+
+    }
+}   
 p{
     margin: auto;
-    /*width: 15em;*/
     word-wrap: break-word;
 
 }
@@ -51,34 +81,36 @@ div#container{
     margin: auto;
     border-radius: 5px;
 }
-div#container > div{
-   
+div#container > div.itens{
     margin: auto;
     margin-top: 12px;
     border: 1px solid var(--border-color);
-    padding: 10px;
+    /*padding: 10px;*/
     border-radius: 25px;
     width: 68%;
     box-sizing: border-box;
     font-family: sans-serif;
-    transition: transform 0.5s ease-in-out;  
-    transition: box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; 
+    transition: box-shadow 1s ease-in-out;
     height: 40px;
     text-align: center;
     background-color:var(--div-bg-color);
+    animation: itens 1s;
+   
+
 }
-div#container > div:hover{
+div#container > div.itens:hover{
    border: 2px solid var(--color-div-hover);
 }
 div#container div a{
     text-decoration: none;
     color: var(--font-color);
     display: block;
-    padding: 1px;
+    padding: 10px;
 }
-div#container div:hover{
+div#container div.tens:hover{
     cursor: pointer;
-    transform: scale(1.02); 
+    transform: scale(1.05); 
 }
 footer{
     width: 100%;
