@@ -20,9 +20,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-   
 }
-
 h1{
     font-family: "Lato", sans-serif;
     font-weight: 800;
@@ -97,8 +95,21 @@ div#container > div.itens{
     text-align: center;
     background-color:var(--div-bg-color);
     animation: itens 1s;
-   
-
+}
+div.itens{
+    position: relative;
+}
+div.star::before{
+    content:url(star.svg);
+    position: absolute;
+    top: 3px;
+    left: 95%;
+}
+div.star::after{
+    content:url(star.svg);
+    position: absolute;
+    top: 3px;
+    right: 95%;
 }
 div#container > div.itens:hover{
    border: 2px solid var(--color-div-hover);
