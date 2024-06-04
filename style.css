@@ -1,131 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --body-bg-color:#ddccac;
-    --font-color:#4F3B1D;
-    --div-bg-color:#FFF9EF;
-    --border-color:#C3A780;
-    --color-div-hover:#b5863e76;
+:root {
+  --body-bg-color: #ddccac;
+  --font-color: #4f3b1d;
+  --div-bg-color: #fff9ef;
+  --border-color: #c3a780;
+  --color-div-hover: #b5863e76;
 }
-body{
-   
-    color:var(--font-color);
-    font-weight: bolder;
-    font-style:italic;
-    background-color: var(--body-bg-color); 
-    background: linear-gradient(rgba(255, 255, 255, 0.815), rgba(255, 255, 255, 0.685)), url(img/img-back-small.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  color: var(--font-color);
+  font-weight: bolder;
+  font-style: italic;
+  background-color: var(--body-bg-color);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.815),
+      rgba(255, 255, 255, 0.685)
+    ),
+    url(img/img-back-small.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-h1{
-    font-family: "Lato", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size:1.6em;
-    margin-bottom: 20px;
-    animation: titulo 1.7s;
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  animation: titulo 1.7s;
 }
-span.texto{
-    animation: animado-txt 1s;
-
+span.texto {
+  animation: animado-txt 1s;
 }
-@keyframes titulo{
-    from{
-       font-size: 0rem;
-    }
-    to{
-        font-size: 1.6rem;
-    }
+@keyframes titulo {
+  from {
+    font-size: 0rem;
+  }
+  to {
+    font-size: 1.6rem;
+  }
 }
-@keyframes animado-txt{
-    from{
-        font-size: 0;
-    }
-    to{
-        font-size: 1rem;
-    }
+@keyframes animado-txt {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 1rem;
+  }
 }
-@keyframes itens{
-    from{
-       width:0%;
-       font-size: 0rem;
-    }
-    to{
-       width: 68%;
-       font-size: 1rem;
-
-    }
-}   
-p{
-    margin: auto;
-    word-wrap: break-word;
-
-}
-
-main{
-    display: flex;
-    width: 100vw;
-    min-height: 100vh;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-div#container{
-    min-width:350px;
-    max-width: 700px;
-    margin: auto;
-    border-radius: 5px;
-}
-div#container > div.itens{
-    margin: auto;
-    margin-top: 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 25px;
+@keyframes itens {
+  from {
+    width: 0%;
+    font-size: 0rem;
+  }
+  to {
     width: 68%;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    transition: transform 0.2s ease-in-out; 
-    transition: box-shadow 1s ease-in-out;
-    height: 40px;
-    text-align: center;
-    background-color:var(--div-bg-color);
-    animation: itens 1s;
+    font-size: 1rem;
+  }
 }
-div.itens{
-    position: relative;
+p {
+  margin: auto;
+  word-wrap: break-word;
 }
-div.star::before{
-    content:url(star.svg);
-    position: absolute;
-    top: 3px;
-    left: 95%;
+main {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
 }
-div.star::after{
-    content:url(star.svg);
-    position: absolute;
-    top: 3px;
-    right: 95%;
+div#container {
+  min-width: 350px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 5px;
 }
-div#container > div.itens:hover{
-   border: 2px solid var(--color-div-hover);
+div#container > div.itens {
+  margin: auto;
+  margin-top: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  max-width: 75%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: transform 0.2s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
+  height: 40px;
+  text-align: center;
+  background-color: var(--div-bg-color);
+  animation: itens 1s;
 }
-div#container div a{
-    text-decoration: none;
-    color: var(--font-color);
-    display: block;
-    padding: 10px;
+div.itens {
+  position: relative;
 }
-div#container div.tens:hover{
-    cursor: pointer;
-    transform: scale(1.05); 
+div.star::before {
+  content: url(star.svg);
+  position: absolute;
+  top: 3px;
+  left: 95%;
 }
-footer{
-    width: 100%;
-    text-align: center; 
-    margin-bottom: 1rem;  
+div.star::after {
+  content: url(star.svg);
+  position: absolute;
+  top: 3px;
+  right: 95%;
+}
+div#container > div.itens:hover {
+  border: 2px solid var(--color-div-hover);
+}
+div#container div a {
+  text-decoration: none;
+  color: var(--font-color);
+  display: block;
+  padding: 10px;
+}
+div#container div.tens:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
