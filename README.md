@@ -1,1 +1,1 @@
-**https://side-up.netlify.app/
+**https://side-up.netlify.app/**
